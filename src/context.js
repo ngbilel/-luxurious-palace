@@ -79,7 +79,7 @@ class RoomProvider extends React.Component {
     filterRooms = () =>{
        const {rooms, type, capacity, pets, breakfast, price, maxSize, minSize} = this.state;
        
-        let sortedRooms = type === 'all' ? rooms : rooms.filter(room => room.type === type );
+        let sortedRooms = type === 'All' ? rooms : rooms.filter(room => room.type === type );
             sortedRooms = pets ? sortedRooms.filter(room => room.pets === pets) : sortedRooms;
             sortedRooms = breakfast ? sortedRooms.filter(room => room.breakfast === breakfast ) : sortedRooms;
             sortedRooms = capacity ? sortedRooms.filter(room =>room.capacity >= capacity) : sortedRooms;
