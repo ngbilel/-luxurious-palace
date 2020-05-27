@@ -15,7 +15,7 @@ class RoomProvider extends React.Component {
         sortedRooms: [],
         featuredRooms: [],
         loading: true,
-        type:'all',
+        type:'All',
         capacity: 1,
         price: 600,
         minPrice: 0,
